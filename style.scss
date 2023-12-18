@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import '_variables';
+@import '_companent';
+@import '_navbar';
+@import '_header';
+@import '_events';
+@import '_explore';
+@import '_tours';
+@import '_footer';
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: $body-color;
+    font-family: 'poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+
+.menu-btn{
+    display: none;
+}
+
+@media (max-width:768px){
+    .menu-btn{
+        display: block;
+        width: 30px;
+    }
+
+    .navbar-links{
+        display: none;
+    }
+
+    .tours{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        &-right{
+        
+            img{
+                max-width: 180px;
+                max-height: 180px;
+            }
+        }
+    }
+}
+

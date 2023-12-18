@@ -1,0 +1,44 @@
+.tours{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 15px 30px;
+
+    &-left{
+        
+        width: 510px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 10px;
+        word-wrap: wrap;
+        word-break: break-all;
+
+        p{
+            width: 50%;
+        }
+
+    }
+
+    &-right{
+        width: 510px;
+        
+
+        &-gallery{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5px;
+            img{
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+            }
+        }
+    }
+}
